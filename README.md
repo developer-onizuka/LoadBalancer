@@ -1,8 +1,9 @@
 # LoadBalancer
 
-# 1. Clone
+# 1. git Clone
 ```
 git clone https://github.com/developer-onizuka/LoadBalancer
+cd LoadBalancer
 ```
 
 # 1. Service of Cat
