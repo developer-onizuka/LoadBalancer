@@ -6,17 +6,17 @@ git clone https://github.com/developer-onizuka/LoadBalancer
 cd LoadBalancer
 ```
 
-# 1. Service of Cat
+# 2. Service of Cat
 ```
 kubectl apply -f cat/nginx_cat.yaml 
 ```
 
-# 2. Service of Dog
+# 3. Service of Dog
 ```
 kubectl apply -f dog/nginx_dog.yaml 
 ```
 
-# 3. Check IP address of loadBalancer for each service
+# 4. Check IP address of loadBalancer for each service
 ```
 # kubectl get services
 NAME            TYPE           CLUSTER-IP       EXTERNAL-IP       PORT(S)          AGE
@@ -25,7 +25,7 @@ nginx-cat-svc   LoadBalancer   10.110.197.163   192.168.121.221   8080:30010/TCP
 nginx-dog-svc   LoadBalancer   10.100.217.243   192.168.121.223   8080:30011/TCP   3m19s
 ```
 
-# 4. Access thru Browzer
+# 5. Access thru Browzer
 ```
 root@master:/home/vagrant/LoadBalancer# curl 192.168.121.221:8080/cat/index.html
 cat
