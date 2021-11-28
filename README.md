@@ -27,7 +27,7 @@ nginx-dog-svc   LoadBalancer   10.100.217.243   192.168.121.223   8080:30011/TCP
 
 # 5. Access thru Browzer
 ```
-root@master:/home/vagrant/LoadBalancer# curl 192.168.121.221:8080/cat/index.html
+# curl 192.168.121.221:8080/cat/index.html
 cat
 <pre>
           | \\\                 /__\
@@ -59,7 +59,7 @@ cat
 </pre>
 ```
 ```
-root@master:/home/vagrant/LoadBalancer# curl 192.168.121.223:8080/dog/index.html
+# curl 192.168.121.223:8080/dog/index.html
 dog
 <pre>
           ____
