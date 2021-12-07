@@ -8,14 +8,18 @@ cd LoadBalancer
 
 # 2. Service of Cat
 ```
+cd cat
 kubectl create configmap nginx-cat-html --from-file=index.html
-kubectl apply -f cat/nginx_cat.yaml 
+kubectl apply -f nginx_cat.yaml 
+cd -
 ```
 
 # 3. Service of Dog
 ```
+cd dog
 kubectl create configmap nginx-dog-html --from-file=index.html
 kubectl apply -f dog/nginx_dog.yaml 
+cd -
 ```
 
 # 4. Check IP address of loadBalancer for each service
