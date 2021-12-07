@@ -8,11 +8,13 @@ cd LoadBalancer
 
 # 2. Service of Cat
 ```
+kubectl create configmap nginx-cat-html --from-file=index.html
 kubectl apply -f cat/nginx_cat.yaml 
 ```
 
 # 3. Service of Dog
 ```
+kubectl create configmap nginx-dog-html --from-file=index.html
 kubectl apply -f dog/nginx_dog.yaml 
 ```
 
